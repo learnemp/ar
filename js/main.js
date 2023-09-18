@@ -264,6 +264,12 @@ function captureScreenshot() {
   // Render additional elements (header and footer)
   renderAdditionalElements(screenshotContext);
 
+  // Get the logo image element
+  const logoImage = document.getElementById('logoImage');
+
+   // Draw the logo image on top of the screenshot
+   screenshotContext.drawImage(logoImage, 10, 10, 90, 90); // Adjust the position and size as needed
+
   // Create a download link for the screenshot
   const a = document.createElement('a');
   a.href = screenshotCanvas.toDataURL('image/png');
@@ -300,7 +306,7 @@ function renderAdditionalElements(context) {
 
   // Logo
   const logoImage = new Image();
-  logoImage.src = "./logo.jpg";
+  logoImage.src = "./logob.jpg";
   logoImage.onload = () => {
     context.drawImage(logoImage, 10, 10, 90, 90); // Adjust the position and size as needed
   };
