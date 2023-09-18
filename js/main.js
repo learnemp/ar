@@ -291,12 +291,12 @@ function renderModelOnCanvas(context) {
 function renderAdditionalElements(context) {
   // Header
   context.fillStyle = "red"; // Set background color
-  context.fillRect(0, 0, window.innerWidth, 200); // Draw a background rectangle
+  context.fillRect(0, 0, window.innerWidth, 250); // Draw a background rectangle
 
   // Add a border to the header
   context.strokeStyle = "white"; // Set border color
   context.lineWidth = 2; // Set border width
-  context.strokeRect(0, 0, window.innerWidth, 200); // Draw a border around the header
+  context.strokeRect(0, 0, window.innerWidth, 250); // Draw a border around the header
 
   // Logo
   const logoImage = new Image();
@@ -324,12 +324,12 @@ function renderAdditionalElements(context) {
   gradient.addColorStop(1, "#537895");
 
   context.fillStyle = gradient; // Set gradient as the background
-  context.fillRect(0, window.innerHeight - 250, window.innerWidth, 250); // Draw a background rectangle
+  context.fillRect(0, window.innerHeight - 270, window.innerWidth, 270); // Draw a background rectangle
 
   // Add a border to the footer
   context.strokeStyle = "white"; // Set border color
   context.lineWidth = 2; // Set border width
-  context.strokeRect(0, window.innerHeight - 250, window.innerWidth, 250); // Draw a border around the footer
+  context.strokeRect(0, window.innerHeight - 270, window.innerWidth, 270); // Draw a border around the footer
 
   // Footer Text
   const footerText = "I support for a world where deaf people";
@@ -347,6 +347,6 @@ function renderAdditionalElements(context) {
   // Add styles to footer text
   context.shadowColor = "white"; // Add a shadow
   context.shadowBlur = 4;
-  context.fillText(footerText, footerCenterX, window.innerHeight - 140); // Center the first line of footer text horizontally
-  context.fillText(footerText2, footerCenterX2, window.innerHeight - 70); // Center the second line of footer text horizontally
+  context.fillText(footerText, footerCenterX, window.innerHeight - 160); // Center the first line of footer text horizontally
+  context.fillText(footerText2, footerCenterX2, window.innerHeight - 80); // Center the second line of footer text horizontally
 }
