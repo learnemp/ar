@@ -347,6 +347,6 @@ function renderAdditionalElements(context) {
   // Add styles to footer text
   context.shadowColor = "white"; // Add a shadow
   context.shadowBlur = 4;
-  context.fillText(footerText, footerCenterX, window.innerHeight - 130); // Center the first line of footer text horizontally
-  context.fillText(footerText2, footerCenterX2, window.innerHeight - 60); // Center the second line of footer text horizontally
+  context.fillText(footerText, footerCenterX, window.innerHeight - 140); // Center the first line of footer text horizontally
+  context.fillText(footerText2, footerCenterX2, window.innerHeight - 70); // Center the second line of footer text horizontally
 }
