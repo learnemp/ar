@@ -307,7 +307,7 @@ function renderAdditionalElements(context) {
 
   // Header Text
   context.fillStyle = "white"; // Set text color
-  context.font = "5.1em 'Montserrat', sans-serif"; // Set font size and family
+  context.font = "5.3em 'Montserrat', sans-serif"; // Set font size and family
 
   const headerText = "International week for the deaf!";
   const textWidth = context.measureText(headerText).width;
@@ -316,7 +316,7 @@ function renderAdditionalElements(context) {
   // Add styles to header text
   context.shadowColor = "white"; // Add a shadow
   context.shadowBlur = 4;
-  context.fillText(headerText, centerX, 110);
+  context.fillText(headerText, centerX, 150);
 
   // Footer
   const gradient = context.createLinearGradient(0, 0, 0, window.innerHeight);
