@@ -300,7 +300,7 @@ function renderAdditionalElements(context) {
 
   // Logo
   const logoImage = new Image();
-  logoImage.src = "../logob.png";
+  logoImage.src = "./logo.jpg";
   logoImage.onload = () => {
     context.drawImage(logoImage, 10, 10, 90, 90); // Adjust the position and size as needed
   };
