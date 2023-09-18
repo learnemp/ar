@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro Page</title>
+    <style>
+/* Reset some default styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    /* background-color: #f0f0f0;  */
+    
+    background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* This makes the container take up the full viewport height */
+}
+
+.logo {
+    max-width: 40%;
+    height: auto; /* Allow the logo to maintain its aspect ratio */
+    margin-bottom: 20px; /* Adjust the margin as needed */
+}
+
+#linkButton {
+    padding: 15px 30px;
+    background-color: #007bff; /* Button background color */
+    color: #fff; /* Button text color */
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+
+    /* Add more styles for different screen sizes */
+    @media (max-width: 768px) {
+        font-size: 14px;
+    }
+}
+
+#linkButton:hover {
+    background-color: #0056b3; /* Button background color on hover */
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="logo.jpg" alt="Logo" class="logo">
+        <button id="linkButton">Go to Next Page</button>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const linkButton = document.getElementById("linkButton");
+
+            linkButton.addEventListener("click", function () {
+                // Replace 'next-page.html' with the actual HTML page you want to link to.
+                window.location.href = "index.html";
+            });
+        });
+    </script>
+</body>
+</html>
